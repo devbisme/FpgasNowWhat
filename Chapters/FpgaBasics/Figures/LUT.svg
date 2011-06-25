@@ -1,0 +1,1721 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="765"
+   height="990"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.1 "
+   sodipodi:docname="LUT.svg">
+  <title
+     id="title3360">LUT Architecture</title>
+  <defs
+     id="defs4">
+    <marker
+       inkscape:stockid="DiamondSend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="DiamondSend"
+       style="overflow:visible">
+      <path
+         id="path4868"
+         d="M 0,-7.0710768 L -7.0710894,0 L 0,7.0710589 L 7.0710462,0 L 0,-7.0710768 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;marker-start:none"
+         transform="scale(0.2) translate(-6,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow2Lend"
+       style="overflow:visible;">
+      <path
+         id="path4785"
+         style="font-size:12.0;fill-rule:evenodd;stroke-width:0.62500000;stroke-linejoin:round;"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(1.1) rotate(180) translate(1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow2Mend"
+       style="overflow:visible;">
+      <path
+         id="path4791"
+         style="font-size:12.0;fill-rule:evenodd;stroke-width:0.62500000;stroke-linejoin:round;"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(0.6) rotate(180) translate(0,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Send"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow2Send"
+       style="overflow:visible;">
+      <path
+         id="path4797"
+         style="font-size:12.0;fill-rule:evenodd;stroke-width:0.62500000;stroke-linejoin:round;"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(0.3) rotate(180) translate(-2.3,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="EmptyTriangleOutM"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="EmptyTriangleOutM"
+       style="overflow:visible">
+      <path
+         id="path4928"
+         d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
+         style="fill-rule:evenodd;fill:#FFFFFF;stroke:#000000;stroke-width:1.0pt;marker-start:none"
+         transform="scale(0.4) translate(-4.5,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="EmptyTriangleInL"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="EmptyTriangleInL"
+       style="overflow:visible">
+      <path
+         id="path3961"
+         d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
+         style="fill-rule:evenodd;fill:#FFFFFF;stroke:#000000;stroke-width:1.0pt;marker-start:none"
+         transform="scale(-0.8) translate(-6,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="EmptyTriangleOutL"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="EmptyTriangleOutL"
+       style="overflow:visible">
+      <path
+         id="path3970"
+         d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
+         style="fill-rule:evenodd;fill:#FFFFFF;stroke:#000000;stroke-width:1.0pt;marker-start:none"
+         transform="scale(0.8) translate(-6,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="EmptyTriangleOutL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="EmptyTriangleOutL-1"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3970-7"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.8,0,0,0.8,-4.8,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="EmptyTriangleOutL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker3128"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3130"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.8,0,0,0.8,-4.8,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="EmptyTriangleOutL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker3132"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3134"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.8,0,0,0.8,-4.8,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="EmptyTriangleInL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="EmptyTriangleInL-4"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3961-0"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(-0.8,0,0,-0.8,4.8,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="EmptyTriangleInL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker3138"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3140"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(-0.8,0,0,-0.8,4.8,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="EmptyTriangleOutL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker3142"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3144"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.8,0,0,0.8,-4.8,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="EmptyTriangleOutL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker3146"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3148"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.8,0,0,0.8,-4.8,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="EmptyTriangleOutL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker3150"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3152"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.8,0,0,0.8,-4.8,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="EmptyTriangleOutL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker3154"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3156"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.8,0,0,0.8,-4.8,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="EmptyTriangleOutL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker3158"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3160"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.8,0,0,0.8,-4.8,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="EmptyTriangleOutL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker3162"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3164"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.8,0,0,0.8,-4.8,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="EmptyTriangleOutL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker3166"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3168"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.8,0,0,0.8,-4.8,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="EmptyTriangleOutL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker3170"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3172"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.8,0,0,0.8,-4.8,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="EmptyTriangleOutL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker3174"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3176"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.8,0,0,0.8,-4.8,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="EmptyTriangleOutL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker3178"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3180"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.8,0,0,0.8,-4.8,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="EmptyTriangleOutL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker3182"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3184"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.8,0,0,0.8,-4.8,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="EmptyTriangleOutL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker3186"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3188"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.8,0,0,0.8,-4.8,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="EmptyTriangleOutL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker3190"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3192"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.8,0,0,0.8,-4.8,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="EmptyTriangleOutL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker3194"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3196"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.8,0,0,0.8,-4.8,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="EmptyTriangleOutL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="EmptyTriangleOutL-5"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3970-2"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.8,0,0,0.8,-4.8,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="EmptyTriangleOutL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="EmptyTriangleOutL-6"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3970-1"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.8,0,0,0.8,-4.8,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="EmptyTriangleOutL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="EmptyTriangleOutL-2"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3970-3"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.8,0,0,0.8,-4.8,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="EmptyTriangleOutL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="EmptyTriangleOutL-8"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3970-9"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.8,0,0,0.8,-4.8,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="EmptyTriangleOutL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="EmptyTriangleOutL-4"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3970-31"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.8,0,0,0.8,-4.8,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="EmptyTriangleOutL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="EmptyTriangleOutL-41"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3970-13"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.8,0,0,0.8,-4.8,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="EmptyTriangleOutL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="EmptyTriangleOutL-7"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3970-4"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.8,0,0,0.8,-4.8,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="EmptyTriangleOutL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="EmptyTriangleOutL-74"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3970-0"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.8,0,0,0.8,-4.8,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="EmptyTriangleOutL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="EmptyTriangleOutL-88"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3970-24"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.8,0,0,0.8,-4.8,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="EmptyTriangleOutM"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="EmptyTriangleOutM-1"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4928-1"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.4,0,0,0.4,-1.8,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="EmptyTriangleOutM"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="EmptyTriangleOutM-2"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4928-7"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.4,0,0,0.4,-1.8,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="EmptyTriangleOutM"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="EmptyTriangleOutM-6"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4928-18"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.4,0,0,0.4,-1.8,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="EmptyTriangleOutL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="EmptyTriangleOutL-27"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3970-95"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.8,0,0,0.8,-4.8,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="EmptyTriangleOutL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="EmptyTriangleOutL-3"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3970-12"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.8,0,0,0.8,-4.8,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="EmptyTriangleOutL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="EmptyTriangleOutL-34"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3970-11"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.8,0,0,0.8,-4.8,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="EmptyTriangleOutM"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="EmptyTriangleOutM-7"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4928-9"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.4,0,0,0.4,-1.8,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="EmptyTriangleOutM"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="EmptyTriangleOutM-60"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4928-2"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.4,0,0,0.4,-1.8,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="EmptyTriangleOutL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="EmptyTriangleOutL-86"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3970-5"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.8,0,0,0.8,-4.8,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="EmptyTriangleOutM"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="EmptyTriangleOutM-9"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4928-0"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.4,0,0,0.4,-1.8,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="EmptyTriangleOutM"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="EmptyTriangleOutM-61"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4928-3"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.4,0,0,0.4,-1.8,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="EmptyTriangleOutM"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="EmptyTriangleOutM-93"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4928-4"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.4,0,0,0.4,-1.8,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="EmptyTriangleOutL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="EmptyTriangleOutL-60"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3970-6"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.8,0,0,0.8,-4.8,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="EmptyTriangleOutL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="EmptyTriangleOutL-18"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3970-49"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.8,0,0,0.8,-4.8,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="EmptyTriangleOutL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="EmptyTriangleOutL-37"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3970-8"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.8,0,0,0.8,-4.8,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="EmptyTriangleOutL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="EmptyTriangleOutL-29"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3970-135"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.8,0,0,0.8,-4.8,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="EmptyTriangleOutL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="EmptyTriangleOutL-63"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3970-61"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.8,0,0,0.8,-4.8,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="EmptyTriangleOutL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="EmptyTriangleOutL-42"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3970-09"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.8,0,0,0.8,-4.8,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="EmptyTriangleOutL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="EmptyTriangleOutL-372"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3970-60"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.8,0,0,0.8,-4.8,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="EmptyTriangleOutL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="EmptyTriangleOutL-65"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3970-75"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.8,0,0,0.8,-4.8,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="EmptyTriangleOutL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="EmptyTriangleOutL-12"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3970-00"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.8,0,0,0.8,-4.8,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="EmptyTriangleOutL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="EmptyTriangleOutL-46"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3970-07"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.8,0,0,0.8,-4.8,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="EmptyTriangleOutL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="EmptyTriangleOutL-77"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3970-77"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.8,0,0,0.8,-4.8,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="EmptyTriangleOutM"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="EmptyTriangleOutM-3"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4928-5"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.4,0,0,0.4,-1.8,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="EmptyTriangleOutL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="EmptyTriangleOutL-125"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3970-094"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.8,0,0,0.8,-4.8,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="EmptyTriangleOutL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="EmptyTriangleOutL-16"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3970-40"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.8,0,0,0.8,-4.8,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Lend-1"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4785-0"
+         style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Lend-3"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4785-4"
+         style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Lend-8"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4785-5"
+         style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Lend-2"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4785-54"
+         style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="EmptyTriangleOutL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="EmptyTriangleOutL-16-1"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3970-40-7"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.8,0,0,0.8,-4.8,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="EmptyTriangleInL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker3138-0"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3140-9"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(-0.8,0,0,-0.8,4.8,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="EmptyTriangleOutL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="EmptyTriangleOutL-14"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3970-23"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.8,0,0,0.8,-4.8,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="EmptyTriangleOutL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="EmptyTriangleOutL-21"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3970-68"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.8,0,0,0.8,-4.8,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="EmptyTriangleOutL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="EmptyTriangleOutL-189"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3970-27"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.8,0,0,0.8,-4.8,0)" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.5"
+     inkscape:cx="92.620107"
+     inkscape:cy="797.26214"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:snap-global="true"
+     showborder="true"
+     inkscape:window-width="1392"
+     inkscape:window-height="1102"
+     inkscape:window-x="187"
+     inkscape:window-y="14"
+     inkscape:window-maximized="0"
+     inkscape:showpageshadow="true"
+     borderlayer="false"
+     inkscape:snap-grids="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid2985"
+       empspacing="5"
+       dotted="true"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>LUT Architecture</dc:title>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-sa/3.0/" />
+        <dc:date>12/8/2010</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Dave Vandenbout</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:publisher>
+          <cc:Agent>
+            <dc:title>XESS Corp.</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:description>Template with styles and objects for XESS-related documentatiion.</dc:description>
+        <dc:contributor>
+          <cc:Agent>
+            <dc:title>Dave Vandenbout</dc:title>
+          </cc:Agent>
+        </dc:contributor>
+        <dc:rights>
+          <cc:Agent>
+            <dc:title>All rights reserved.</dc:title>
+          </cc:Agent>
+        </dc:rights>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-sa/3.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-62.36218)"
+     style="display:inline">
+    <g
+       id="g7107"
+       inkscape:export-filename="C:\xesscorp\PRODUCTS\TUTORIALS\Now What\Figures\LUT.png"
+       inkscape:export-xdpi="144"
+       inkscape:export-ydpi="144">
+      <rect
+         style="color:#000000;fill:#d7e3f4;fill-opacity:1;fill-rule:evenodd;stroke:#87aade;stroke-width:2.90767002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect6707"
+         width="80"
+         height="270"
+         x="-260"
+         y="112.36218"
+         transform="scale(-1,1)"
+         inkscape:export-filename="C:\xesscorp\PRODUCTS\TUTORIALS\Now What\Figures\CPLD.png"
+         inkscape:export-xdpi="144"
+         inkscape:export-ydpi="144" />
+      <g
+         transform="translate(3.8823613,-2.9069405e-5)"
+         id="g7049">
+        <g
+           id="g6943"
+           transform="translate(0,3.0046158e-5)">
+          <g
+             id="g6736"
+             transform="translate(-110,-90)">
+            <rect
+               inkscape:export-ydpi="144"
+               inkscape:export-xdpi="144"
+               inkscape:export-filename="C:\xesscorp\PRODUCTS\TUTORIALS\Now What\Figures\CPLD.png"
+               transform="scale(-1,1)"
+               y="222.36218"
+               x="-350"
+               height="19.999998"
+               width="30"
+               id="rect6738"
+               style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#666666;stroke-width:2.0079999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+            <text
+               sodipodi:linespacing="125%"
+               id="text6740"
+               y="237.30798"
+               x="335.04785"
+               style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:center;text-decoration:none;line-height:125%;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:middle;baseline-shift:baseline;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:AvantGarde Md BT;-inkscape-font-specification:Sans"
+               xml:space="preserve"
+               inkscape:export-filename="C:\xesscorp\PRODUCTS\APPNOTES\app001_3.png"
+               inkscape:export-xdpi="144"
+               inkscape:export-ydpi="144"><tspan
+                 id="tspan6742"
+                 style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:center;text-decoration:none;line-height:125%;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:middle;baseline-shift:baseline;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:AvantGarde Md BT;-inkscape-font-specification:Sans"
+                 y="237.30798"
+                 x="335.04785"
+                 sodipodi:role="line">0</tspan></text>
+          </g>
+          <text
+             sodipodi:linespacing="125%"
+             id="text4659-7"
+             y="140.70581"
+             x="207.51546"
+             style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:AvantGarde Md BT;-inkscape-font-specification:Sans"
+             xml:space="preserve"><tspan
+               y="140.70581"
+               x="207.51546"
+               id="tspan4661-6"
+               sodipodi:role="line">000</tspan></text>
+        </g>
+        <g
+           id="g6951"
+           transform="translate(0,30.00003)">
+          <g
+             transform="translate(-110,-90)"
+             id="g6953">
+            <rect
+               style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#666666;stroke-width:2.0079999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+               id="rect6955"
+               width="30"
+               height="19.999998"
+               x="-350"
+               y="222.36218"
+               transform="scale(-1,1)"
+               inkscape:export-filename="C:\xesscorp\PRODUCTS\TUTORIALS\Now What\Figures\CPLD.png"
+               inkscape:export-xdpi="144"
+               inkscape:export-ydpi="144" />
+            <text
+               inkscape:export-ydpi="144"
+               inkscape:export-xdpi="144"
+               inkscape:export-filename="C:\xesscorp\PRODUCTS\APPNOTES\app001_3.png"
+               xml:space="preserve"
+               style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:center;text-decoration:none;line-height:125%;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:middle;baseline-shift:baseline;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:AvantGarde Md BT;-inkscape-font-specification:Sans"
+               x="335.04785"
+               y="237.30798"
+               id="text6957"
+               sodipodi:linespacing="125%"><tspan
+                 sodipodi:role="line"
+                 x="335.04785"
+                 y="237.30798"
+                 style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:center;text-decoration:none;line-height:125%;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:middle;baseline-shift:baseline;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:AvantGarde Md BT;-inkscape-font-specification:Sans"
+                 id="tspan6959">0</tspan></text>
+          </g>
+          <text
+             xml:space="preserve"
+             style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:AvantGarde Md BT;-inkscape-font-specification:Sans"
+             x="207.51546"
+             y="140.70581"
+             id="text6961"
+             sodipodi:linespacing="125%"><tspan
+               sodipodi:role="line"
+               id="tspan6963"
+               x="207.51546"
+               y="140.70581">001</tspan></text>
+        </g>
+        <g
+           id="g6965"
+           transform="translate(0,60.00003)">
+          <g
+             id="g6967"
+             transform="translate(-110,-90)">
+            <rect
+               inkscape:export-ydpi="144"
+               inkscape:export-xdpi="144"
+               inkscape:export-filename="C:\xesscorp\PRODUCTS\TUTORIALS\Now What\Figures\CPLD.png"
+               transform="scale(-1,1)"
+               y="222.36218"
+               x="-350"
+               height="19.999998"
+               width="30"
+               id="rect6969"
+               style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#666666;stroke-width:2.0079999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+            <text
+               sodipodi:linespacing="125%"
+               id="text6971"
+               y="237.30798"
+               x="335.04785"
+               style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:center;text-decoration:none;line-height:125%;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:middle;baseline-shift:baseline;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:AvantGarde Md BT;-inkscape-font-specification:Sans"
+               xml:space="preserve"
+               inkscape:export-filename="C:\xesscorp\PRODUCTS\APPNOTES\app001_3.png"
+               inkscape:export-xdpi="144"
+               inkscape:export-ydpi="144"><tspan
+                 id="tspan6973"
+                 style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:center;text-decoration:none;line-height:125%;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:middle;baseline-shift:baseline;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:AvantGarde Md BT;-inkscape-font-specification:Sans"
+                 y="237.30798"
+                 x="335.04785"
+                 sodipodi:role="line">0</tspan></text>
+          </g>
+          <text
+             sodipodi:linespacing="125%"
+             id="text6975"
+             y="140.70581"
+             x="207.51546"
+             style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:AvantGarde Md BT;-inkscape-font-specification:Sans"
+             xml:space="preserve"><tspan
+               y="140.70581"
+               x="207.51546"
+               id="tspan6977"
+               sodipodi:role="line">010</tspan></text>
+        </g>
+        <g
+           id="g6979"
+           transform="translate(0,90.00003)">
+          <g
+             transform="translate(-110,-90)"
+             id="g6981">
+            <rect
+               style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#666666;stroke-width:2.0079999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+               id="rect6983"
+               width="30"
+               height="19.999998"
+               x="-350"
+               y="222.36218"
+               transform="scale(-1,1)"
+               inkscape:export-filename="C:\xesscorp\PRODUCTS\TUTORIALS\Now What\Figures\CPLD.png"
+               inkscape:export-xdpi="144"
+               inkscape:export-ydpi="144" />
+            <text
+               inkscape:export-ydpi="144"
+               inkscape:export-xdpi="144"
+               inkscape:export-filename="C:\xesscorp\PRODUCTS\APPNOTES\app001_3.png"
+               xml:space="preserve"
+               style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:center;text-decoration:none;line-height:125%;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:middle;baseline-shift:baseline;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:AvantGarde Md BT;-inkscape-font-specification:Sans"
+               x="335.04785"
+               y="237.30798"
+               id="text6985"
+               sodipodi:linespacing="125%"><tspan
+                 sodipodi:role="line"
+                 x="335.04785"
+                 y="237.30798"
+                 style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:center;text-decoration:none;line-height:125%;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:middle;baseline-shift:baseline;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:AvantGarde Md BT;-inkscape-font-specification:Sans"
+                 id="tspan6987">0</tspan></text>
+          </g>
+          <text
+             xml:space="preserve"
+             style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:AvantGarde Md BT;-inkscape-font-specification:Sans"
+             x="207.51546"
+             y="140.70581"
+             id="text6989"
+             sodipodi:linespacing="125%"><tspan
+               sodipodi:role="line"
+               id="tspan6991"
+               x="207.51546"
+               y="140.70581">011</tspan></text>
+        </g>
+        <g
+           id="g6993"
+           transform="translate(0,120.00003)">
+          <g
+             id="g6995"
+             transform="translate(-110,-90)">
+            <rect
+               inkscape:export-ydpi="144"
+               inkscape:export-xdpi="144"
+               inkscape:export-filename="C:\xesscorp\PRODUCTS\TUTORIALS\Now What\Figures\CPLD.png"
+               transform="scale(-1,1)"
+               y="222.36218"
+               x="-350"
+               height="19.999998"
+               width="30"
+               id="rect6997"
+               style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#666666;stroke-width:2.0079999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+            <text
+               sodipodi:linespacing="125%"
+               id="text6999"
+               y="237.30798"
+               x="335.04785"
+               style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:center;text-decoration:none;line-height:125%;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:middle;baseline-shift:baseline;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:AvantGarde Md BT;-inkscape-font-specification:Sans"
+               xml:space="preserve"
+               inkscape:export-filename="C:\xesscorp\PRODUCTS\APPNOTES\app001_3.png"
+               inkscape:export-xdpi="144"
+               inkscape:export-ydpi="144"><tspan
+                 id="tspan7001"
+                 style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:center;text-decoration:none;line-height:125%;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:middle;baseline-shift:baseline;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:AvantGarde Md BT;-inkscape-font-specification:Sans"
+                 y="237.30798"
+                 x="335.04785"
+                 sodipodi:role="line">0</tspan></text>
+          </g>
+          <text
+             sodipodi:linespacing="125%"
+             id="text7003"
+             y="140.70581"
+             x="207.51546"
+             style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:AvantGarde Md BT;-inkscape-font-specification:Sans"
+             xml:space="preserve"><tspan
+               y="140.70581"
+               x="207.51546"
+               id="tspan7005"
+               sodipodi:role="line">100</tspan></text>
+        </g>
+        <g
+           id="g7007"
+           transform="translate(0,150.00003)">
+          <g
+             transform="translate(-110,-90)"
+             id="g7009">
+            <rect
+               style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#666666;stroke-width:2.0079999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+               id="rect7011"
+               width="30"
+               height="19.999998"
+               x="-350"
+               y="222.36218"
+               transform="scale(-1,1)"
+               inkscape:export-filename="C:\xesscorp\PRODUCTS\TUTORIALS\Now What\Figures\CPLD.png"
+               inkscape:export-xdpi="144"
+               inkscape:export-ydpi="144" />
+            <text
+               inkscape:export-ydpi="144"
+               inkscape:export-xdpi="144"
+               inkscape:export-filename="C:\xesscorp\PRODUCTS\APPNOTES\app001_3.png"
+               xml:space="preserve"
+               style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:center;text-decoration:none;line-height:125%;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:middle;baseline-shift:baseline;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:AvantGarde Md BT;-inkscape-font-specification:Sans"
+               x="335.04785"
+               y="237.30798"
+               id="text7013"
+               sodipodi:linespacing="125%"><tspan
+                 sodipodi:role="line"
+                 x="335.04785"
+                 y="237.30798"
+                 style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:center;text-decoration:none;line-height:125%;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:middle;baseline-shift:baseline;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:AvantGarde Md BT;-inkscape-font-specification:Sans"
+                 id="tspan7015">0</tspan></text>
+          </g>
+          <text
+             xml:space="preserve"
+             style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:AvantGarde Md BT;-inkscape-font-specification:Sans"
+             x="207.51546"
+             y="140.70581"
+             id="text7017"
+             sodipodi:linespacing="125%"><tspan
+               sodipodi:role="line"
+               id="tspan7019"
+               x="207.51546"
+               y="140.70581">101</tspan></text>
+        </g>
+        <g
+           id="g7021"
+           transform="translate(0,180.00003)">
+          <g
+             id="g7023"
+             transform="translate(-110,-90)">
+            <rect
+               inkscape:export-ydpi="144"
+               inkscape:export-xdpi="144"
+               inkscape:export-filename="C:\xesscorp\PRODUCTS\TUTORIALS\Now What\Figures\CPLD.png"
+               transform="scale(-1,1)"
+               y="222.36218"
+               x="-350"
+               height="19.999998"
+               width="30"
+               id="rect7025"
+               style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#666666;stroke-width:2.0079999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+            <text
+               sodipodi:linespacing="125%"
+               id="text7027"
+               y="237.30798"
+               x="335.04785"
+               style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:center;text-decoration:none;line-height:125%;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:middle;baseline-shift:baseline;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:AvantGarde Md BT;-inkscape-font-specification:Sans"
+               xml:space="preserve"
+               inkscape:export-filename="C:\xesscorp\PRODUCTS\APPNOTES\app001_3.png"
+               inkscape:export-xdpi="144"
+               inkscape:export-ydpi="144"><tspan
+                 id="tspan7029"
+                 style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:center;text-decoration:none;line-height:125%;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:middle;baseline-shift:baseline;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:AvantGarde Md BT;-inkscape-font-specification:Sans"
+                 y="237.30798"
+                 x="335.04785"
+                 sodipodi:role="line">0</tspan></text>
+          </g>
+          <text
+             sodipodi:linespacing="125%"
+             id="text7031"
+             y="140.70581"
+             x="207.51546"
+             style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:AvantGarde Md BT;-inkscape-font-specification:Sans"
+             xml:space="preserve"><tspan
+               y="140.70581"
+               x="207.51546"
+               id="tspan7033"
+               sodipodi:role="line">110</tspan></text>
+        </g>
+        <g
+           id="g7035"
+           transform="translate(0,210.00003)">
+          <g
+             transform="translate(-110,-90)"
+             id="g7037">
+            <rect
+               style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000;stroke-width:2.00799990000000020;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+               id="rect7039"
+               width="30"
+               height="19.999998"
+               x="-350"
+               y="222.36218"
+               transform="scale(-1,1)"
+               inkscape:export-filename="C:\xesscorp\PRODUCTS\TUTORIALS\Now What\Figures\CPLD.png"
+               inkscape:export-xdpi="144"
+               inkscape:export-ydpi="144" />
+            <text
+               inkscape:export-ydpi="144"
+               inkscape:export-xdpi="144"
+               inkscape:export-filename="C:\xesscorp\PRODUCTS\APPNOTES\app001_3.png"
+               xml:space="preserve"
+               style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:center;text-decoration:none;line-height:125%;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:middle;baseline-shift:baseline;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:AvantGarde Md BT;-inkscape-font-specification:Sans"
+               x="335.04785"
+               y="237.30798"
+               id="text7041"
+               sodipodi:linespacing="125%"><tspan
+                 sodipodi:role="line"
+                 x="335.04785"
+                 y="237.30798"
+                 style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:center;text-decoration:none;line-height:125%;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:middle;baseline-shift:baseline;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:AvantGarde Md BT;-inkscape-font-specification:Sans"
+                 id="tspan7043">1</tspan></text>
+          </g>
+          <text
+             xml:space="preserve"
+             style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:AvantGarde Md BT;-inkscape-font-specification:Sans"
+             x="207.51546"
+             y="140.70581"
+             id="text7045"
+             sodipodi:linespacing="125%"><tspan
+               sodipodi:role="line"
+               id="tspan7047"
+               x="207.51546"
+               y="140.70581">111</tspan></text>
+        </g>
+      </g>
+    </g>
+    <g
+       id="g7177"
+       inkscape:export-filename="C:\xesscorp\PRODUCTS\TUTORIALS\Now What\Figures\LUT.png"
+       inkscape:export-xdpi="144"
+       inkscape:export-ydpi="144">
+      <path
+         sodipodi:nodetypes="cc"
+         style="color:#000000;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;marker-end:url(#EmptyTriangleOutL);visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         d="m 140,242.36218 40,0"
+         id="path7167"
+         inkscape:connector-curvature="0"
+         inkscape:export-filename="C:\xesscorp\PRODUCTS\APPNOTES\app001_3.png"
+         inkscape:export-xdpi="144"
+         inkscape:export-ydpi="144" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text7173"
+         y="247.39343"
+         x="130"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:center;text-decoration:none;line-height:125%;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:middle;baseline-shift:baseline;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:AvantGarde Md BT;-inkscape-font-specification:Sans"
+         xml:space="preserve"
+         inkscape:export-filename="C:\xesscorp\PRODUCTS\APPNOTES\app001_3.png"
+         inkscape:export-xdpi="144"
+         inkscape:export-ydpi="144"><tspan
+           id="tspan7175"
+           style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:end;text-decoration:none;line-height:125%;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:end;baseline-shift:baseline;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:AvantGarde Md BT;-inkscape-font-specification:Sans"
+           y="247.39343"
+           x="130"
+           sodipodi:role="line">A1 = 1</tspan></text>
+    </g>
+    <g
+       id="g7182"
+       transform="translate(0,30)"
+       inkscape:export-filename="C:\xesscorp\PRODUCTS\TUTORIALS\Now What\Figures\LUT.png"
+       inkscape:export-xdpi="144"
+       inkscape:export-ydpi="144">
+      <path
+         inkscape:export-ydpi="144"
+         inkscape:export-xdpi="144"
+         inkscape:export-filename="C:\xesscorp\PRODUCTS\APPNOTES\app001_3.png"
+         inkscape:connector-curvature="0"
+         id="path7184"
+         d="m 140,242.36218 40,0"
+         style="color:#000000;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;marker-end:url(#EmptyTriangleOutL);visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         sodipodi:nodetypes="cc" />
+      <text
+         inkscape:export-ydpi="144"
+         inkscape:export-xdpi="144"
+         inkscape:export-filename="C:\xesscorp\PRODUCTS\APPNOTES\app001_3.png"
+         xml:space="preserve"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:center;text-decoration:none;line-height:125%;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:middle;baseline-shift:baseline;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:AvantGarde Md BT;-inkscape-font-specification:Sans"
+         x="130"
+         y="247.39343"
+         id="text7186"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           x="130"
+           y="247.39343"
+           style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:end;text-decoration:none;line-height:125%;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:end;baseline-shift:baseline;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:AvantGarde Md BT;-inkscape-font-specification:Sans"
+           id="tspan7188">A0 = 1</tspan></text>
+    </g>
+    <g
+       id="g7190"
+       transform="translate(0,-30)"
+       inkscape:export-filename="C:\xesscorp\PRODUCTS\TUTORIALS\Now What\Figures\LUT.png"
+       inkscape:export-xdpi="144"
+       inkscape:export-ydpi="144">
+      <path
+         sodipodi:nodetypes="cc"
+         style="color:#000000;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;marker-end:url(#EmptyTriangleOutL);visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         d="m 140,242.36218 40,0"
+         id="path7192"
+         inkscape:connector-curvature="0"
+         inkscape:export-filename="C:\xesscorp\PRODUCTS\APPNOTES\app001_3.png"
+         inkscape:export-xdpi="144"
+         inkscape:export-ydpi="144" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text7194"
+         y="247.39343"
+         x="130"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:center;text-decoration:none;line-height:125%;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:middle;baseline-shift:baseline;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:AvantGarde Md BT;-inkscape-font-specification:Sans"
+         xml:space="preserve"
+         inkscape:export-filename="C:\xesscorp\PRODUCTS\APPNOTES\app001_3.png"
+         inkscape:export-xdpi="144"
+         inkscape:export-ydpi="144"><tspan
+           id="tspan7196"
+           style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:end;text-decoration:none;line-height:125%;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:end;baseline-shift:baseline;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:AvantGarde Md BT;-inkscape-font-specification:Sans"
+           y="247.39343"
+           x="130"
+           sodipodi:role="line">A2 = 1</tspan></text>
+    </g>
+    <g
+       id="g7234"
+       inkscape:export-filename="C:\xesscorp\PRODUCTS\TUTORIALS\Now What\Figures\LUT.png"
+       inkscape:export-xdpi="144"
+       inkscape:export-ydpi="144">
+      <path
+         sodipodi:nodetypes="cc"
+         style="color:#000000;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;marker-end:url(#EmptyTriangleOutL);visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         d="m 260,242.36218 40,0"
+         id="path7192-5"
+         inkscape:connector-curvature="0"
+         inkscape:export-filename="C:\xesscorp\PRODUCTS\APPNOTES\app001_3.png"
+         inkscape:export-xdpi="144"
+         inkscape:export-ydpi="144" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text7194-4"
+         y="247.39343"
+         x="310"
+         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:center;text-decoration:none;line-height:125%;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:middle;baseline-shift:baseline;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:AvantGarde Md BT;-inkscape-font-specification:Sans"
+         xml:space="preserve"
+         inkscape:export-filename="C:\xesscorp\PRODUCTS\APPNOTES\app001_3.png"
+         inkscape:export-xdpi="144"
+         inkscape:export-ydpi="144"><tspan
+           id="tspan7196-3"
+           style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:125%;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:AvantGarde Md BT;-inkscape-font-specification:Sans"
+           y="247.39343"
+           x="310"
+           sodipodi:role="line">B = 1</tspan></text>
+    </g>
+    <g
+       id="g7295"
+       transform="translate(20,0)"
+       inkscape:export-filename="C:\xesscorp\PRODUCTS\TUTORIALS\Now What\Figures\LUT.png"
+       inkscape:export-xdpi="144"
+       inkscape:export-ydpi="144">
+      <path
+         style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         d="m 530,212.36218 0,30 0,30 30,0 c 16.56854,0 30,-13.43147 30,-30 0,-16.56854 -13.43146,-30 -30,-30 l -30,0 z"
+         id="path7239"
+         inkscape:connector-curvature="0" />
+      <g
+         transform="translate(350,0)"
+         id="g7241">
+        <path
+           sodipodi:nodetypes="cc"
+           style="color:#000000;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;marker-end:url(#EmptyTriangleOutL);visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           d="m 140,242.36218 40,0"
+           id="path7243"
+           inkscape:connector-curvature="0"
+           inkscape:export-filename="C:\xesscorp\PRODUCTS\APPNOTES\app001_3.png"
+           inkscape:export-xdpi="144"
+           inkscape:export-ydpi="144" />
+        <text
+           sodipodi:linespacing="125%"
+           id="text7245"
+           y="247.39343"
+           x="130"
+           style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:center;text-decoration:none;line-height:125%;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:middle;baseline-shift:baseline;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:AvantGarde Md BT;-inkscape-font-specification:Sans"
+           xml:space="preserve"
+           inkscape:export-filename="C:\xesscorp\PRODUCTS\APPNOTES\app001_3.png"
+           inkscape:export-xdpi="144"
+           inkscape:export-ydpi="144"><tspan
+             id="tspan7247"
+             style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:end;text-decoration:none;line-height:125%;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:end;baseline-shift:baseline;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:AvantGarde Md BT;-inkscape-font-specification:Sans"
+             y="247.39343"
+             x="130"
+             sodipodi:role="line">A1</tspan></text>
+      </g>
+      <g
+         id="g7249"
+         transform="translate(350,20)">
+        <path
+           inkscape:export-ydpi="144"
+           inkscape:export-xdpi="144"
+           inkscape:export-filename="C:\xesscorp\PRODUCTS\APPNOTES\app001_3.png"
+           inkscape:connector-curvature="0"
+           id="path7251"
+           d="m 140,242.36218 40,0"
+           style="color:#000000;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;marker-end:url(#EmptyTriangleOutL);visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           sodipodi:nodetypes="cc" />
+        <text
+           inkscape:export-ydpi="144"
+           inkscape:export-xdpi="144"
+           inkscape:export-filename="C:\xesscorp\PRODUCTS\APPNOTES\app001_3.png"
+           xml:space="preserve"
+           style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:center;text-decoration:none;line-height:125%;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:middle;baseline-shift:baseline;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:AvantGarde Md BT;-inkscape-font-specification:Sans"
+           x="130"
+           y="247.39343"
+           id="text7253"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             x="130"
+             y="247.39343"
+             style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:end;text-decoration:none;line-height:125%;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:end;baseline-shift:baseline;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:AvantGarde Md BT;-inkscape-font-specification:Sans"
+             id="tspan7255">A0</tspan></text>
+      </g>
+      <g
+         id="g7257"
+         transform="translate(350,-20)">
+        <path
+           sodipodi:nodetypes="cc"
+           style="color:#000000;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;marker-end:url(#EmptyTriangleOutL);visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           d="m 140,242.36218 40,0"
+           id="path7259"
+           inkscape:connector-curvature="0"
+           inkscape:export-filename="C:\xesscorp\PRODUCTS\APPNOTES\app001_3.png"
+           inkscape:export-xdpi="144"
+           inkscape:export-ydpi="144" />
+        <text
+           sodipodi:linespacing="125%"
+           id="text7261"
+           y="247.39343"
+           x="130"
+           style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:center;text-decoration:none;line-height:125%;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:middle;baseline-shift:baseline;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:AvantGarde Md BT;-inkscape-font-specification:Sans"
+           xml:space="preserve"
+           inkscape:export-filename="C:\xesscorp\PRODUCTS\APPNOTES\app001_3.png"
+           inkscape:export-xdpi="144"
+           inkscape:export-ydpi="144"><tspan
+             id="tspan7263"
+             style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:end;text-decoration:none;line-height:125%;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:end;baseline-shift:baseline;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:AvantGarde Md BT;-inkscape-font-specification:Sans"
+             y="247.39343"
+             x="130"
+             sodipodi:role="line">A2</tspan></text>
+      </g>
+      <g
+         transform="translate(330,0)"
+         id="g7265">
+        <path
+           sodipodi:nodetypes="cc"
+           style="color:#000000;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;marker-end:url(#EmptyTriangleOutL);visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           d="m 260,242.36218 40,0"
+           id="path7267"
+           inkscape:connector-curvature="0"
+           inkscape:export-filename="C:\xesscorp\PRODUCTS\APPNOTES\app001_3.png"
+           inkscape:export-xdpi="144"
+           inkscape:export-ydpi="144" />
+        <text
+           sodipodi:linespacing="125%"
+           id="text7269"
+           y="247.39343"
+           x="310"
+           style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:center;text-decoration:none;line-height:125%;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:middle;baseline-shift:baseline;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:AvantGarde Md BT;-inkscape-font-specification:Sans"
+           xml:space="preserve"
+           inkscape:export-filename="C:\xesscorp\PRODUCTS\APPNOTES\app001_3.png"
+           inkscape:export-xdpi="144"
+           inkscape:export-ydpi="144"><tspan
+             id="tspan7271"
+             style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:125%;letter-spacing:0px;word-spacing:0px;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:AvantGarde Md BT;-inkscape-font-specification:Sans"
+             y="247.39343"
+             x="310"
+             sodipodi:role="line">B</tspan></text>
+      </g>
+    </g>
+    <path
+       style="fill:#ffffff;stroke:#666666;stroke-width:2.90767001999999990;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;color:#000000;fill-opacity:1;fill-rule:evenodd;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="M 390 160 L 360 180 L 390 200 C 390 200 390 190 400 190 L 410 190 L 420 190 C 430 190 430 200 430 200 L 460 180 L 430 160 C 430 160 430 170 420 170 L 410 170 L 400 170 C 390 170 390 160 390 160 z "
+       transform="translate(0,62.36218)"
+       id="path7273"
+       inkscape:export-filename="C:\xesscorp\PRODUCTS\TUTORIALS\Now What\Figures\LUT.png"
+       inkscape:export-xdpi="144"
+       inkscape:export-ydpi="144" />
+  </g>
+</svg>

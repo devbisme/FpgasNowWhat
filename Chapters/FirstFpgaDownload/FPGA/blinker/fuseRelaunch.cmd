@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/xesscorp/PRODUCTS/TUTORIALS/Now What/Chapters/FirstFpgaDesign/blinker/blinkerTestBench_isim_beh.exe" -prj "C:/xesscorp/PRODUCTS/TUTORIALS/Now What/Chapters/FirstFpgaDesign/blinker/blinkerTestBench_beh.prj" "work.blinkerTestBench" 
