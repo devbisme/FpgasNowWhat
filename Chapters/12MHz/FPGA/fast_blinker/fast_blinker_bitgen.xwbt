@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\xesscorp\PRODUCTS\TUTORIALS\FpgasNowWhat\Chapters\12MHz\FPGA\fast_blinker\fast_blinker.ncd
+OUTFILE=C:\xesscorp\PRODUCTS\TUTORIALS\FpgasNowWhat\Chapters\12MHz\FPGA\fast_blinker\fast_blinker.bit
+FAMILY=Spartan3A and Spartan3AN
+PART=xc3s200a-4vq100
+WORKINGDIR=C:\xesscorp\PRODUCTS\TUTORIALS\FpgasNowWhat\Chapters\12MHz\FPGA\fast_blinker
+LICENSE=WebPack
+USER_INFO=174511202_0_0_679
