@@ -1,0 +1,4 @@
+vhdl work "C:\xesscorp\PRODUCTS\TUTORIALS\FpgasNowWhat\Chapters\LedsButtons\FPGA\pc_subtractor\SyncToClk.vhd"
+vhdl work "C:\xesscorp\PRODUCTS\TUTORIALS\FpgasNowWhat\Chapters\LedsButtons\FPGA\pc_subtractor\Common.vhd"
+vhdl work "C:\xesscorp\PRODUCTS\TUTORIALS\FpgasNowWhat\Chapters\LedsButtons\FPGA\pc_subtractor\HostIo.vhd"
+vhdl work "C:\xesscorp\PRODUCTS\TUTORIALS\FpgasNowWhat\Chapters\LedsButtons\FPGA\pc_subtractor\pc_subtractor.vhd"

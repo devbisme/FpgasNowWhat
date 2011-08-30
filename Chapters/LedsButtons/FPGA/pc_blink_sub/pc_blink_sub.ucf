@@ -1,0 +1,2 @@
+net clk_i     loc=p43;  # 12 MHz input clock.
+net blinker_o loc=p44;  # Blinker output to LED.

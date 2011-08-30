@@ -1,0 +1,4 @@
+vhdl work "SyncToClk.vhd"
+vhdl work "Common.vhd"
+vhdl work "HostIo.vhd"
+vhdl work "pc_blink_sub.vhd"

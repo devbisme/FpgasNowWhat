@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="pc_blinker.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="pc_blinker.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="pc_blinker.bit" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="pc_blinker.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="pc_blinker.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="pc_blinker.drc" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="pc_blinker.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="pc_blinker.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="pc_blinker.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="pc_blinker.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="pc_blinker.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="pc_blinker.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="pc_blinker.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="pc_blinker.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="pc_blinker.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="pc_blinker.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="pc_blinker.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="pc_blinker.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="pc_blinker.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="pc_blinker.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="pc_blinker.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="pc_blinker.ut" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="pc_blinker.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="pc_blinker.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="pc_blinker_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="pc_blinker_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="pc_blinker_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="pc_blinker_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="pc_blinker_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="pc_blinker_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="pc_blinker_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="pc_blinker_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="pc_blinker_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="pc_blinker_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="pc_blinker_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="pc_blinker_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="pc_blinker_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="pc_blinker_usage.xml"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="pc_blinker_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="pc_blinker_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1314296548" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1314296548">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1314537405" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="8548298331536848644" xil_pn:start_ts="1314537405">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1314537405" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="8582023323098635407" xil_pn:start_ts="1314537405">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1314537405" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1314537405">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1314537405" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="3970556473713178588" xil_pn:start_ts="1314537405">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1314537405" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="8569866560980815065" xil_pn:start_ts="1314537405">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1314537405" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="1150146248553549209" xil_pn:start_ts="1314537405">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1314676831" xil_pn:in_ck="2481990822679715314" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-3141226126511383190" xil_pn:start_ts="1314676825">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="pc_blinker.lso"/>
+      <outfile xil_pn:name="pc_blinker.ngc"/>
+      <outfile xil_pn:name="pc_blinker.ngr"/>
+      <outfile xil_pn:name="pc_blinker.prj"/>
+      <outfile xil_pn:name="pc_blinker.stx"/>
+      <outfile xil_pn:name="pc_blinker.syr"/>
+      <outfile xil_pn:name="pc_blinker.xst"/>
+      <outfile xil_pn:name="pc_blinker_vhdl.prj"/>
+      <outfile xil_pn:name="pc_blinker_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1314537420" xil_pn:in_ck="7364251767087466277" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="1075016089738872977" xil_pn:start_ts="1314537420">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1314676834" xil_pn:in_ck="-7008885955011458236" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="7736547579185060006" xil_pn:start_ts="1314676831">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="pc_blinker.bld"/>
+      <outfile xil_pn:name="pc_blinker.ngd"/>
+      <outfile xil_pn:name="pc_blinker_ngdbuild.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1314676836" xil_pn:in_ck="1541876605253105925" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="8244252997095731546" xil_pn:start_ts="1314676834">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+      <outfile xil_pn:name="pc_blinker.pcf"/>
+      <outfile xil_pn:name="pc_blinker_map.map"/>
+      <outfile xil_pn:name="pc_blinker_map.mrp"/>
+      <outfile xil_pn:name="pc_blinker_map.ncd"/>
+      <outfile xil_pn:name="pc_blinker_map.ngm"/>
+      <outfile xil_pn:name="pc_blinker_map.xrpt"/>
+      <outfile xil_pn:name="pc_blinker_summary.xml"/>
+      <outfile xil_pn:name="pc_blinker_usage.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1314676845" xil_pn:in_ck="-7746461195681908898" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="7122883464624052383" xil_pn:start_ts="1314676836">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+      <outfile xil_pn:name="pc_blinker.ncd"/>
+      <outfile xil_pn:name="pc_blinker.pad"/>
+      <outfile xil_pn:name="pc_blinker.par"/>
+      <outfile xil_pn:name="pc_blinker.ptwx"/>
+      <outfile xil_pn:name="pc_blinker.unroutes"/>
+      <outfile xil_pn:name="pc_blinker.xpi"/>
+      <outfile xil_pn:name="pc_blinker_pad.csv"/>
+      <outfile xil_pn:name="pc_blinker_pad.txt"/>
+      <outfile xil_pn:name="pc_blinker_par.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1314676852" xil_pn:in_ck="7364251767087458652" xil_pn:name="TRANEXT_bitFile_spartan3a" xil_pn:prop_ck="-6609643118607267034" xil_pn:start_ts="1314676845">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+      <outfile xil_pn:name="pc_blinker.bgn"/>
+      <outfile xil_pn:name="pc_blinker.bit"/>
+      <outfile xil_pn:name="pc_blinker.drc"/>
+      <outfile xil_pn:name="pc_blinker.ut"/>
+      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
+      <outfile xil_pn:name="webtalk.log"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1314676845" xil_pn:in_ck="-1907392853386714751" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1314676843">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+      <outfile xil_pn:name="pc_blinker.twr"/>
+      <outfile xil_pn:name="pc_blinker.twx"/>
+    </transform>
+  </transforms>
+
+</generated_project>

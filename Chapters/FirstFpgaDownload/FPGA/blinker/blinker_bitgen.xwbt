@@ -1,8 +1,8 @@
 INTSTYLE=ise
-INFILE=C:\xesscorp\PRODUCTS\TUTORIALS\Now What\Chapters\FirstFpgaDownload\FPGA\blinker\blinker.ncd
-OUTFILE=C:\xesscorp\PRODUCTS\TUTORIALS\Now What\Chapters\FirstFpgaDownload\FPGA\blinker\blinker.bit
+INFILE=C:\xesscorp\PRODUCTS\TUTORIALS\FpgasNowWhat\Chapters\FirstFpgaDownload\FPGA\blinker\blinker.ncd
+OUTFILE=C:\xesscorp\PRODUCTS\TUTORIALS\FpgasNowWhat\Chapters\FirstFpgaDownload\FPGA\blinker\blinker.bit
 FAMILY=Spartan3A and Spartan3AN
 PART=xc3s200a-4vq100
-WORKINGDIR=C:\xesscorp\PRODUCTS\TUTORIALS\Now What\Chapters\FirstFpgaDownload\FPGA\blinker
+WORKINGDIR=C:\xesscorp\PRODUCTS\TUTORIALS\FpgasNowWhat\Chapters\FirstFpgaDownload\FPGA\blinker
 LICENSE=WebPack
 USER_INFO=174511202_0_0_679
