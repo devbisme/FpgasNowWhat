@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.2 r9819"
+   sodipodi:docname="InnerProd.svg"
+   inkscape:export-filename="C:\xesscorp\PRODUCTS\TUTORIALS\FpgasNowWhat\Chapters\Rams\Figures\InnerProd.png"
+   inkscape:export-xdpi="144"
+   inkscape:export-ydpi="144">
+  <defs
+     id="defs4">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4898">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop4900" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0"
+         offset="1"
+         id="stop4902" />
+    </linearGradient>
+    <marker
+       inkscape:stockid="EmptyTriangleOutM"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="EmptyTriangleOutM"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4928"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.4,0,0,0.4,-1.8,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="EmptyTriangleOutM"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="EmptyTriangleOutM-4"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4928-0"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.4,0,0,0.4,-1.8,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="EmptyTriangleOutM"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="EmptyTriangleOutM-9"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4928-4"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.4,0,0,0.4,-1.8,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="EmptyTriangleOutM"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="EmptyTriangleOutM-8"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4928-8"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.4,0,0,0.4,-1.8,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="EmptyTriangleOutM"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="EmptyTriangleOutM-2"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4928-45"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.4,0,0,0.4,-1.8,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="EmptyTriangleOutM"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="EmptyTriangleOutM-5"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4928-1"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.4,0,0,0.4,-1.8,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="EmptyTriangleOutM"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="EmptyTriangleOutM-6"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4928-14"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.4,0,0,0.4,-1.8,0)" />
+    </marker>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4898"
+       id="linearGradient4904"
+       x1="310"
+       y1="342.36218"
+       x2="310"
+       y2="312.36218"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.60000005,0,0,0.60000005,123.99998,280.94486)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4898"
+       id="linearGradient4908"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.60000005,0,0,0.60000005,123.99998,380.94486)"
+       x1="310"
+       y1="342.36218"
+       x2="310"
+       y2="312.36218" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.2974169"
+     inkscape:cx="461.84082"
+     inkscape:cy="524.77308"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid3743" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       style="display:inline"
+       id="g5784"
+       transform="matrix(0,-1,1,0,117.63782,802.36218)"
+       inkscape:export-filename="C:\xesscorp\PRODUCTS\APPNOTES\app001_3.png"
+       inkscape:export-xdpi="144"
+       inkscape:export-ydpi="144">
+      <rect
+         y="512.36218"
+         x="270"
+         height="20"
+         width="100"
+         id="rect5714"
+         style="color:#000000;fill:#d7e3f4;fill-opacity:1;fill-rule:evenodd;stroke:#87aade;stroke-width:2.90767002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text4637-7"
+         y="525.89978"
+         x="319.37109"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:AvantGarde Md BT;-inkscape-font-specification:Sans"
+         xml:space="preserve"><tspan
+           id="tspan4673-27"
+           style="font-size:14px;text-align:center;text-anchor:middle"
+           y="525.89978"
+           x="319.37109"
+           sodipodi:role="line">InnerProd</tspan></text>
+    </g>
+    <g
+       id="g4698"
+       transform="translate(40,20)">
+      <g
+         style="display:inline"
+         id="g3772"
+         transform="translate(20,100)"
+         inkscape:export-filename="C:\xesscorp\PRODUCTS\APPNOTES\app001_3.png"
+         inkscape:export-xdpi="144"
+         inkscape:export-ydpi="144">
+        <rect
+           y="512.36218"
+           x="270"
+           height="20"
+           width="100"
+           id="rect3774"
+           style="color:#000000;fill:#d7e3f4;fill-opacity:1;fill-rule:evenodd;stroke:#87aade;stroke-width:1.50800002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+        <text
+           sodipodi:linespacing="125%"
+           id="text3776"
+           y="525.89978"
+           x="319.37109"
+           style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:AvantGarde Md BT;-inkscape-font-specification:Sans"
+           xml:space="preserve"><tspan
+             id="tspan3778"
+             style="font-size:14px;text-align:center;text-anchor:middle"
+             y="525.89978"
+             x="319.37109"
+             sodipodi:role="line">10</tspan></text>
+      </g>
+      <g
+         inkscape:export-ydpi="144"
+         inkscape:export-xdpi="144"
+         inkscape:export-filename="C:\xesscorp\PRODUCTS\APPNOTES\app001_3.png"
+         transform="translate(20,80)"
+         id="g4548"
+         style="display:inline">
+        <rect
+           style="color:#000000;fill:#d7e3f4;fill-opacity:1;fill-rule:evenodd;stroke:#87aade;stroke-width:1.50800002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           id="rect4550"
+           width="100"
+           height="20"
+           x="270"
+           y="512.36218" />
+        <text
+           xml:space="preserve"
+           style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:AvantGarde Md BT;-inkscape-font-specification:Sans"
+           x="319.37109"
+           y="525.89978"
+           id="text4552"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             x="319.37109"
+             y="525.89978"
+             style="font-size:14px;text-align:center;text-anchor:middle"
+             id="tspan4554">9</tspan></text>
+      </g>
+      <g
+         style="display:inline"
+         id="g4556"
+         transform="translate(20,60)"
+         inkscape:export-filename="C:\xesscorp\PRODUCTS\APPNOTES\app001_3.png"
+         inkscape:export-xdpi="144"
+         inkscape:export-ydpi="144">
+        <rect
+           y="512.36218"
+           x="270"
+           height="20"
+           width="100"
+           id="rect4558"
+           style="color:#000000;fill:#d7e3f4;fill-opacity:1;fill-rule:evenodd;stroke:#87aade;stroke-width:1.50800002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+        <text
+           sodipodi:linespacing="125%"
+           id="text4560"
+           y="525.89978"
+           x="319.37109"
+           style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:AvantGarde Md BT;-inkscape-font-specification:Sans"
+           xml:space="preserve"><tspan
+             id="tspan4562"
+             style="font-size:14px;text-align:center;text-anchor:middle"
+             y="525.89978"
+             x="319.37109"
+             sodipodi:role="line">8</tspan></text>
+      </g>
+      <g
+         inkscape:export-ydpi="144"
+         inkscape:export-xdpi="144"
+         inkscape:export-filename="C:\xesscorp\PRODUCTS\APPNOTES\app001_3.png"
+         transform="translate(20,40)"
+         id="g4564"
+         style="display:inline">
+        <rect
+           style="color:#000000;fill:#d7e3f4;fill-opacity:1;fill-rule:evenodd;stroke:#87aade;stroke-width:1.50800002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           id="rect4566"
+           width="100"
+           height="20"
+           x="270"
+           y="512.36218" />
+        <text
+           xml:space="preserve"
+           style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:AvantGarde Md BT;-inkscape-font-specification:Sans"
+           x="319.37109"
+           y="525.89978"
+           id="text4568"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             x="319.37109"
+             y="525.89978"
+             style="font-size:14px;text-align:center;text-anchor:middle"
+             id="tspan4570">7</tspan></text>
+      </g>
+      <g
+         style="display:inline"
+         id="g4572"
+         transform="translate(20,20)"
+         inkscape:export-filename="C:\xesscorp\PRODUCTS\APPNOTES\app001_3.png"
+         inkscape:export-xdpi="144"
+         inkscape:export-ydpi="144">
+        <rect
+           y="512.36218"
+           x="270"
+           height="20"
+           width="100"
+           id="rect4574"
+           style="color:#000000;fill:#d7e3f4;fill-opacity:1;fill-rule:evenodd;stroke:#87aade;stroke-width:1.50800002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+        <text
+           sodipodi:linespacing="125%"
+           id="text4576"
+           y="525.89978"
+           x="319.37109"
+           style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:AvantGarde Md BT;-inkscape-font-specification:Sans"
+           xml:space="preserve"><tspan
+             id="tspan4578"
+             style="font-size:14px;text-align:center;text-anchor:middle"
+             y="525.89978"
+             x="319.37109"
+             sodipodi:role="line">6</tspan></text>
+      </g>
+      <g
+         inkscape:export-ydpi="144"
+         inkscape:export-xdpi="144"
+         inkscape:export-filename="C:\xesscorp\PRODUCTS\APPNOTES\app001_3.png"
+         transform="translate(20,0)"
+         id="g4580"
+         style="display:inline">
+        <rect
+           style="color:#000000;fill:#d7e3f4;fill-opacity:1;fill-rule:evenodd;stroke:#87aade;stroke-width:1.50800002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           id="rect4582"
+           width="100"
+           height="20"
+           x="270"
+           y="512.36218" />
+        <text
+           xml:space="preserve"
+           style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:AvantGarde Md BT;-inkscape-font-specification:Sans"
+           x="319.37109"
+           y="525.89978"
+           id="text4584"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             x="319.37109"
+             y="525.89978"
+             style="font-size:14px;text-align:center;text-anchor:middle"
+             id="tspan4586">5</tspan></text>
+      </g>
+      <g
+         style="display:inline"
+         id="g4588"
+         transform="translate(20,-20)"
+         inkscape:export-filename="C:\xesscorp\PRODUCTS\APPNOTES\app001_3.png"
+         inkscape:export-xdpi="144"
+         inkscape:export-ydpi="144">
+        <rect
+           y="512.36218"
+           x="270"
+           height="20"
+           width="100"
+           id="rect4590"
+           style="color:#000000;fill:#d7e3f4;fill-opacity:1;fill-rule:evenodd;stroke:#87aade;stroke-width:1.50800002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+        <text
+           sodipodi:linespacing="125%"
+           id="text4592"
+           y="525.89978"
+           x="319.37109"
+           style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:AvantGarde Md BT;-inkscape-font-specification:Sans"
+           xml:space="preserve"><tspan
+             id="tspan4594"
+             style="font-size:14px;text-align:center;text-anchor:middle"
+             y="525.89978"
+             x="319.37109"
+             sodipodi:role="line">4</tspan></text>
+      </g>
+      <g
+         inkscape:export-ydpi="144"
+         inkscape:export-xdpi="144"
+         inkscape:export-filename="C:\xesscorp\PRODUCTS\APPNOTES\app001_3.png"
+         transform="translate(20,-40)"
+         id="g4596"
+         style="display:inline">
+        <rect
+           style="color:#000000;fill:#d7e3f4;fill-opacity:1;fill-rule:evenodd;stroke:#87aade;stroke-width:1.50800002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           id="rect4598"
+           width="100"
+           height="20"
+           x="270"
+           y="512.36218" />
+        <text
+           xml:space="preserve"
+           style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:AvantGarde Md BT;-inkscape-font-specification:Sans"
+           x="319.37109"
+           y="525.89978"
+           id="text4600"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             x="319.37109"
+             y="525.89978"
+             style="font-size:14px;text-align:center;text-anchor:middle"
+             id="tspan4602">3</tspan></text>
+      </g>
+      <g
+         style="display:inline"
+         id="g4604"
+         transform="translate(20,-60)"
+         inkscape:export-filename="C:\xesscorp\PRODUCTS\APPNOTES\app001_3.png"
+         inkscape:export-xdpi="144"
+         inkscape:export-ydpi="144">
+        <rect
+           y="512.36218"
+           x="270"
+           height="20"
+           width="100"
+           id="rect4606"
+           style="color:#000000;fill:#d7e3f4;fill-opacity:1;fill-rule:evenodd;stroke:#87aade;stroke-width:1.50800002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+        <text
+           sodipodi:linespacing="125%"
+           id="text4608"
+           y="525.89978"
+           x="319.37109"
+           style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:AvantGarde Md BT;-inkscape-font-specification:Sans"
+           xml:space="preserve"><tspan
+             id="tspan4610"
+             style="font-size:14px;text-align:center;text-anchor:middle"
+             y="525.89978"
+             x="319.37109"
+             sodipodi:role="line">2</tspan></text>
+      </g>
+      <g
+         inkscape:export-ydpi="144"
+         inkscape:export-xdpi="144"
+         inkscape:export-filename="C:\xesscorp\PRODUCTS\APPNOTES\app001_3.png"
+         transform="translate(20,-80)"
+         id="g4612"
+         style="display:inline">
+        <rect
+           style="color:#000000;fill:#d7e3f4;fill-opacity:1;fill-rule:evenodd;stroke:#87aade;stroke-width:1.50800002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           id="rect4614"
+           width="100"
+           height="20"
+           x="270"
+           y="512.36218" />
+        <text
+           xml:space="preserve"
+           style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:AvantGarde Md BT;-inkscape-font-specification:Sans"
+           x="319.37109"
+           y="525.89978"
+           id="text4616"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             x="319.37109"
+             y="525.89978"
+             style="font-size:14px;text-align:center;text-anchor:middle"
+             id="tspan4618">1</tspan></text>
+      </g>
+      <rect
+         y="432.36218"
+         x="290"
+         height="200"
+         width="100"
+         id="rect4620"
+         style="color:#000000;fill:none;stroke:#87aade;stroke-width:2.90767002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    </g>
+    <path
+       style="fill:#d7e3f4;stroke:#87aade;stroke-width:2.90767001999999990;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;color:#000000;fill-opacity:1;fill-rule:evenodd;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 530,492.36218 0,40 -40,30 0,-40 10,-10 -10,-10 0,-40 40,30"
+       id="path4639"
+       inkscape:connector-curvature="0" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path4647"
+       d="m 600,462.36218 0,40 -40,30 0,-40 10,-10 -10,-10 0,-40 40,30"
+       style="color:#000000;fill:#d7e3f4;fill-opacity:1;fill-rule:evenodd;stroke:#87aade;stroke-width:2.90767002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;color:#000000;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;marker:none;marker-end:url(#EmptyTriangleOutM);visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 530,512.36218 30,0"
+       id="path4662"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;color:#000000;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;marker:none;marker-end:url(#EmptyTriangleOutM);visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 600,482.36218 30,0"
+       id="path4674"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;color:#000000;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;marker:none;marker-end:url(#EmptyTriangleOutM);visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 650,482.36218 30,0 0,-80 -150,0 0,50 30,0"
+       id="path4686"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;color:#000000;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;marker:none;marker-end:url(#EmptyTriangleOutM);visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 430,462.36218 30,0 0,20 30,0"
+       id="path4741"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;color:#000000;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;marker:none;marker-end:url(#EmptyTriangleOutM);visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 430,562.36218 30,0 0,-20 30,0"
+       id="path4765"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:AvantGarde Md BT;-inkscape-font-specification:Sans"
+       x="510"
+       y="519.62195"
+       id="text4616-7"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="510"
+         y="519.62195"
+         style="font-size:28px;font-weight:normal;text-align:center;text-anchor:middle;-inkscape-font-specification:Sans"
+         id="tspan4618-1">x</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:AvantGarde Md BT;-inkscape-font-specification:Sans"
+       x="580"
+       y="492.22644"
+       id="text4616-7-1"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="580"
+         y="492.22644"
+         style="font-size:28px;font-weight:normal;text-align:center;text-anchor:middle;-inkscape-font-specification:Sans"
+         id="tspan4618-1-5">+</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;color:#000000;fill-opacity:1;fill-rule:nonzero;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#EmptyTriangleOutM)"
+       d="m 300,462.36218 30,0"
+       id="path4819"
+       inkscape:connector-curvature="0" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text4637-7-3"
+       y="467.3114"
+       x="290"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:AvantGarde Md BT;-inkscape-font-specification:Sans"
+       xml:space="preserve"><tspan
+         id="tspan4673-27-2"
+         style="font-size:14px;text-align:end;text-anchor:end"
+         y="467.3114"
+         x="290"
+         sodipodi:role="line">vec1Ptr</tspan></text>
+    <path
+       inkscape:connector-curvature="0"
+       id="path4874"
+       d="m 300,562.36218 30,0"
+       style="color:#000000;fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;marker-end:url(#EmptyTriangleOutM);visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:AvantGarde Md BT;-inkscape-font-specification:Sans"
+       x="290"
+       y="567.3114"
+       id="text4876"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="290"
+         y="567.3114"
+         style="font-size:14px;text-align:end;text-anchor:end"
+         id="tspan4878">vec2Ptr</tspan></text>
+    <path
+       style="fill:url(#linearGradient4904);fill-opacity:1;stroke:none"
+       d="m 304,462.36218 0,18 -6,0 12,12 12,-12 -6,0 0,-18 z"
+       id="path4880"
+       inkscape:connector-curvature="0" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path4906"
+       d="m 304,562.36218 0,18 -6,0 12,12 12,-12 -6,0 0,-18 z"
+       style="fill:url(#linearGradient4908);fill-opacity:1;stroke:none" />
+  </g>
+</svg>
