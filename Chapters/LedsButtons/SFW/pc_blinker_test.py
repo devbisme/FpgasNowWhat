@@ -17,7 +17,7 @@
 # *   (c)2011 - X Engineering Software Systems Corp. (www.xess.com)
 # ***********************************************************************************/
 
-from XstoolsApi import * # Import the functions and objects for the PC <=> FPGA link.
+from xstools.xsdutio import * 1  # Import funcs/classes for PC <=> FPGA link.
 
 print '''\n
 ##################################################################
@@ -31,7 +31,7 @@ USB_ID = 0  # This is the USB port index for the XuLA board connected to the hos
 BLINKER_ID = 1  # This is the identifier for the blinker in the FPGA.
 
 # Create a blinker interface object that takes one 1-bit input and has one 1-bit output.
-blinker = XsDut(USB_ID, BLINKER_ID, [1], [1])
+blinker = XsDutIo(USB_ID, BLINKER_ID, [1], [1])
 
 while True: # Do this forever...
     led = blinker.Read() # Read the current state of the LED.

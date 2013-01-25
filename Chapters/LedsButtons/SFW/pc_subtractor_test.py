@@ -17,7 +17,7 @@
 # *   (c)2011 - X Engineering Software Systems Corp. (www.xess.com)
 # ***********************************************************************************/
 
-from XstoolsApi import *  # Import the funcs/objects for the PC <=> FPGA link.
+from xstools.xsdutio import *  # Import funcs/classes for PC <=> FPGA link.
 from random import *  # Import some random number generator routines.
 
 print '''

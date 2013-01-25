@@ -17,7 +17,7 @@
 # *   (c)2011 - X Engineering Software Systems Corp. (www.xess.com)
 # ***********************************************************************************/
 
-from XstoolsApi import * # Import the functions and objects for the PC <=> FPGA link.
+from xstools.xsdutio import *  # Import funcs/classes for PC <=> FPGA link.
 
 print '''\n
 ##################################################################
@@ -29,6 +29,6 @@ USB_ID = 0  # This is the USB port index for the XuLA board connected to the hos
 DUT_ID = 255  # This is the default identifier for the DUT in the FPGA.
 
 # Create an interface object to the FPGA with one 16-bit input and one 1-bit output.
-dut = XsDut(USB_ID, DUT_ID, [16], [1])
+dut = XsDutIo(USB_ID, DUT_ID, [16], [1])
 sum = dut.Read(); # Read the 16-bit summation from the FPGA.
 print 'Sum = %d\r' % sum.unsigned
