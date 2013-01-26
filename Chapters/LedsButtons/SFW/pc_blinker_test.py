@@ -17,7 +17,7 @@
 # *   (c)2011 - X Engineering Software Systems Corp. (www.xess.com)
 # ***********************************************************************************/
 
-from xstools.xsdutio import * 1  # Import funcs/classes for PC <=> FPGA link.
+from xstools.xsdutio import *  # Import funcs/classes for PC <=> FPGA link.
 
 print '''\n
 ##################################################################
