@@ -19,7 +19,7 @@ entity SdramSPInst is
     sdWe_bo   : out   std_logic;  -- SDRAM write-enable.
     sdBs_o    : out   std_logic;  -- SDRAM bank-address.
     sdAddr_o  : out   std_logic_vector(11 downto 0);  -- SDRAM address bus.
-    sdData_io : inout std_logic_vector(7 downto 0)    -- SDRAM data bus.
+    sdData_io : inout std_logic_vector(15 downto 0)    -- SDRAM data bus.
     );
 end entity;
 
@@ -27,7 +27,7 @@ architecture Behavioral of SdramSPInst is
   constant NO                     : std_logic := '0';
   constant YES                    : std_logic := '1';
   constant RAM_SIZE_C             : natural   := 256;  -- Number of words in RAM.
-  constant RAM_WIDTH_C            : natural   := 8;  -- Width of RAM words.
+  constant RAM_WIDTH_C            : natural   := 16;  -- Width of RAM words.
   constant MIN_ADDR_C             : natural   := 1;  -- Process RAM from this address ...
   constant MAX_ADDR_C             : natural   := 5;  -- ... to this address.
   subtype RamWord_t is unsigned(RAM_WIDTH_C-1 downto 0);  -- RAM word type.
