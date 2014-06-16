@@ -1,4 +1,0 @@
-vhdl work "C:\xesscorp\PRODUCTS\TUTORIALS\FpgasNowWhat\Chapters\LedsButtons\FPGA\pc_blink_sub\SyncToClk.vhd"
-vhdl work "C:\xesscorp\PRODUCTS\TUTORIALS\FpgasNowWhat\Chapters\LedsButtons\FPGA\pc_blink_sub\Common.vhd"
-vhdl work "C:\xesscorp\PRODUCTS\TUTORIALS\FpgasNowWhat\Chapters\LedsButtons\FPGA\pc_blink_sub\HostIo.vhd"
-vhdl work "C:\xesscorp\PRODUCTS\TUTORIALS\FpgasNowWhat\Chapters\LedsButtons\FPGA\pc_blink_sub\pc_blink_sub.vhd"

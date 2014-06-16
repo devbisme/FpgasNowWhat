@@ -1,1 +1,0 @@
--intstyle "ise" -incremental -o "C:/xesscorp/PRODUCTS/TUTORIALS/FpgasNowWhat/Chapters/12MHz/FPGA/fast_blinker/fast_blinkerTestBench_isim_beh.exe" -prj "C:/xesscorp/PRODUCTS/TUTORIALS/FpgasNowWhat/Chapters/12MHz/FPGA/fast_blinker/fast_blinkerTestBench_beh.prj" "work.fast_blinkerTestBench" 
